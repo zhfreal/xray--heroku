@@ -1,0 +1,44 @@
+{
+  "name": "Xray-core简易部署",
+  "description": "Deploy github.com/XTLS/Xray-core to Heroku",
+  "keywords": [
+    "V2ray"
+  ],
+  "env": {
+    "APPNAME": {
+      "description": "请输入最上方填写的App Name",
+      "value": ""
+    },
+    "VER": {
+      "description": "默认latest安装最新版本Xray-core （输入Xray-core版本号进行指定版本安装。例如：1.5.0)",
+      "value": "latest"
+    },
+    "UUID": {
+      "description": "Vmess协议默认UUID，请输入自己的UUID",
+      "value": ""
+    },
+    "WS_PATH": {
+      "description": "Path路径，默认/myapp",
+      "value": "/myapp"
+    },
+    "GENQR": {
+      "description": "是否生成QR图片，'Yes|YES|yes|no|NO|No|1|0'。",
+      "value": "no"
+    },
+    "SHARE_QR_PATH": {
+      "description": "二维码和订阅地址路径，默认/m。如GENQR变量为no，此变量没有作用。",
+      "value": "/m"
+    },
+    "AUTH_USER": {
+      "description": "web访问的用户名，用于控制二维码显示。如GENQR变量为no，此变量没有作用。",
+      "value": "v2ray"
+    },
+    "AUTH_PASSWORD": {
+      "description": "web访问的密码，用于控制二维码显示。如GENQR变量为no，此变量没有作用",
+      "value": ""
+    }
+  },
+  "website": "https://github.com/zhfreal/xray--heroku",
+  "repository": "https://github.com/zhfreal/xray--heroku",
+  "stack": "container"
+}
